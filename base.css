@@ -33,10 +33,7 @@ body
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-}
-#title
-{
-	font-size: 1rem;
+	transition: all 0.3s linear;
 }
 #logo img
 {
@@ -47,6 +44,10 @@ body
 {
 	font-weight: bold;
 	font-size: 0.6rem;
+}
+#logotitle
+{
+	font-size: 	1rem;
 }
 #navitems ul
 {
@@ -80,6 +81,45 @@ body
 {
 	width: 100%;
 } 
+.bodycontainer
+{
+	padding: 2% 1%;
+	/*background: purple;*/
+}
+.about
+{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.about:hover #image
+{
+	filter: grayscale(0.2);
+}
+#image,#content
+{
+	display: flex;
+	flex-direction: column;
+	padding: 2% 3%;
+	transition: all 0.5s linear;
+}
+#title
+{	
+	/*text-align: center;*/
+	display: inline-block;
+	text-decoration: underline;
+	transition: all 1s linear;
+	width: auto;
+	padding: 2% 1%;
+	font-weight: bold;
+	font-size: 1.4rem;
+}
+#info
+{
+	font-size: 1.1rem;
+	color: rgba(0,0,0,0.7);
+	font-weight: bold;
+}
 @media (max-width: 800px)
 {
 	#navitems
